@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de Tobhaxx - Streamer, creador de contenido y gamer.">
+    <title>Tobhaxx - Página Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #8e44ad, #ff69b4); /* Degradado de lila a rosa */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons a {
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(135deg, #00c6ff, #0072ff); /* Azul degradado */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            letter-spacing: 2px;
+        }
+
+        .cta-buttons a:hover {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Naranja degradado */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Biography Section */
+        .bio {
+            padding: 80px 20px;
+            background-color: #f7f7f7;
+            text-align: center;
+            color: #333;
+        }
+
+        .bio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff69b4;
+        }
+
+        .bio p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            color: white;
+        }
+
+        .social-links .twitch {
+            background-color: #6441a5;
+        }
+
+        .social-links .youtube {
+            background-color: #ff0000;
+        }
+
+        .social-links .tiktok {
+            background-color: #69C9D0;
+        }
+
+        .social-links .instagram {
+            background: radial-gradient(circle at 30% 30%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #141414;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .bio h2 {
+                font-size: 2rem;
+            }
+
+            .bio p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tobhaxx</h1>
+    <p>Streamer | Creador de Contenido</p>
+    <div class="cta-buttons">
+        <a href="https://www.twitch.tv/tobhaxx" target="_blank" class="twitch">Twitch</a>
+        <a href="https://www.youtube.com/@Tobhax?si=Hh-8jLdm99yCbmQA" target="_blank" class="youtube">YouTube</a>
+        <a href="https://www.tiktok.com/@tobhax" target="_blank" class="tiktok">TikTok</a>
+        <a href="https://www.instagram.com/tobhax/" target="_blank" class="instagram">Instagram</a>
+    </div>
+</header>
+
+<section class="bio">
+    <h2>Sobre mí</h2>
+    <p>¡Bienvenidos a la página oficial de Tobhaxx! Soy un streamer y creador de contenido apasionado por el mundo del gaming. Únete a mis transmisiones en Twitch y sigue mis aventuras en todas mis redes.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Tobhaxx. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
